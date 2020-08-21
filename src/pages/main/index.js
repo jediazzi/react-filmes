@@ -15,7 +15,7 @@ export default class Main extends Component {
   }
   loadMovies = async (page = 1) => {
     const response = await api.get(
-      `discover/movie?api_key=941d452609a3a292dcce2cbb24a18e0a&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`,
+      `discover/movie?api_key=<<API_KEY_AQUI>>&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`,
     );
 
     const { movieInfo } = response.data;
