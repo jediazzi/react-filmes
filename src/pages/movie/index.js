@@ -19,7 +19,7 @@ export default class Movie extends Component {
   loadMovie = async () => {
     const { id } = this.props.match.params;
     const response = await api.get(
-      `movie/${id}?api_key=941d452609a3a292dcce2cbb24a18e0a&language=pt-BR`,
+      `movie/${id}?api_key=<<API_KEY_AQUI>>&language=pt-BR`,
     );
 
     this.setState({ movie: response.data });
