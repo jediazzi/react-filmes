@@ -1,0 +1,52 @@
+@import '../../estilo.scss';
+
+.movie-info {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.movie-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.movie-info .btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: $primaryColor;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.movie-info .movie-tag {
+  background-color: $primaryColor;
+  color: #fff;
+  border-radius: 15px;
+  padding: 2px 7px;
+  margin: 0 3px;
+}
+
+.movie-info p {
+  color: #666;
+  line-height: 24px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.movie-info p a {
+  color: #069;
+}
+
+.movie-poster {
+  max-width: 100%;
+}
