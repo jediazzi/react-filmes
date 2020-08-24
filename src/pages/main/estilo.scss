@@ -1,0 +1,84 @@
+@import '../../estilo.scss';
+
+.movie-list {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  article {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    width: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+  }
+  article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid $primaryColor;
+    background: none;
+    margin-top: 10px;
+    color: $primaryColor;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px;
+      border-radius: 5px;
+      border: 0;
+      background-color: $primaryColor;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      &:disabled,
+      &:disabled:hover {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-list article {
+    flex-direction: column;
+  }
+  .movie-list img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
